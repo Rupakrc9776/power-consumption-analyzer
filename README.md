@@ -1,25 +1,49 @@
-# Load Scheduling Optimizer
+# ⚡ Power Consumption Analyzer
 
-Small Python tool to optimize appliance load scheduling, estimate energy consumption and cost, and export results/plots.
+A small Python tool to analyze appliance energy consumption, optimize scheduling, and estimate electricity costs.  
+This project demonstrates load scheduling optimization — a great foundation for **IoT/ML-based smart energy monitoring**.
 
-## Files in repo
-- `load_scheduling_optimizer.py` — main script
-- `sample_appliances.csv` — example input (appliance data)
-- `sample_tariffs.csv` — example input (tariff/pricing)
-- `requirements.txt` — Python dependencies
-- `.gitignore`, `LICENSE`, `README.md`
+---
 
-> Running the script creates output files (not committed):  
+## ✨ Features
+- Reads input data from **CSV files** (`sample_appliances.csv`, `sample_tariffs.csv`)
+- Calculates:
+  - ✅ Total energy consumption  
+  - ✅ Approximate electricity cost  
+  - ✅ Peak load usage  
+- Produces detailed outputs:
+  - `optimized_schedule.csv` — optimized appliance usage schedule  
+  - `cost_breakdown.csv` — cost details  
+  - `load_curve.png` — load demand curve  
+  - `cost_breakdown.png` — cost distribution visualization  
+
+---
+
+## 📂 Project Structure
+power-consumption-analyzer/
+├── load_scheduling_optimizer.py # main script
+├── sample_appliances.csv # input: appliances data
+├── sample_tariffs.csv # input: tariff/pricing data
+├── requirements.txt # Python dependencies
+├── README.md # documentation
+├── LICENSE # license info
+├── .gitignore # ignore venv + outputs
+> Running the script generates:  
 `optimized_schedule.csv`, `cost_breakdown.csv`, `load_curve.png`, `cost_breakdown.png`
 
 ---
 
-## Requirements
-- Python 3.8+
-- pip
+## 🛠 Requirements
+- Python **3.8+**
+- pip (Python package manager)
 
-## Quick start — run locally
-1. Clone the repo:
+Dependencies are listed in `requirements.txt`:
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone this repo
 ```bash
 git clone https://github.com/Rupakrc9776/power-consumption-analyzer.git
 cd power-consumption-analyzer
