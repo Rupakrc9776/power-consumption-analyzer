@@ -1,43 +1,25 @@
-# ⚡ Power Consumption Analyzer
+# Load Scheduling Optimizer
 
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Open Issues](https://img.shields.io/github/issues/<Rupakrc9776>/energy-analyzer)](https://github.com/<Rupakrc9776>/energy-analyzer/issues)
+Small Python tool to optimize appliance load scheduling, estimate energy consumption and cost, and export results/plots.
 
-A small Python tool to analyze daily energy usage, estimate bills, and visualize consumption trends.  
-Perfect as a **3rd-semester mini-project** and a good foundation for **IoT/ML-based smart energy monitoring**.
+## Files in repo
+- `load_scheduling_optimizer.py` — main script
+- `sample_appliances.csv` — example input (appliance data)
+- `sample_tariffs.csv` — example input (tariff/pricing)
+- `requirements.txt` — Python dependencies
+- `.gitignore`, `LICENSE`, `README.md`
 
----
-
-![Usage Graph](usage.png)
-
-## 🚀 Features
-- Reads data from `data.csv` or manual input
-- Calculates **total energy consumed** & estimated bill
-- Highlights **peak usage day**
-- Exports `output_summary.txt`, `output_data.csv`, `usage.png`
+> Running the script creates output files (not committed):  
+`optimized_schedule.csv`, `cost_breakdown.csv`, `load_curve.png`, `cost_breakdown.png`
 
 ---
 
-## 📁 Project Structure
-energy-analyzer/
-├── energy_analyzer.py
-├── data.csv
-├── output_data.csv
-├── output_summary.txt
-├── usage.png
-├── requirements.txt
-├── .gitignore
-├── LICENSE
-└── README.md
-
----
-
-## 🛠 Requirements
+## Requirements
 - Python 3.8+
-- `pandas`
-- `matplotlib`
+- pip
 
-Install dependencies:
-```powershell
-pip install -r requirements.txt
+## Quick start — run locally
+1. Clone the repo:
+```bash
+git clone https://github.com/Rupakrc9776/power-consumption-analyzer.git
+cd power-consumption-analyzer
