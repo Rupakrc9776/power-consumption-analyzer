@@ -1,15 +1,36 @@
-# Ignore virtual environments
-venv/
-env/
-
-# Ignore Python cache
+# Byte-compiled / caches
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Ignore system files
+# Virtual environments
+venv/
+.env
+.env.*
+
+# Editor / OS files
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
 
-# Ignore IDE/project settings
-.vscode/
-.idea/
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Test / coverage
+.coverage
+htmlcov/
+
+# Output files created by the script (do not track)
+optimized_schedule.csv
+cost_breakdown.csv
+load_curve.png
+cost_breakdown.png
+output_summary.txt
+output_data.csv
+usage.png
+
+# Logs
+*.log
