@@ -47,3 +47,16 @@ Dependencies are listed in `requirements.txt`:
 ```bash
 git clone https://github.com/Rupakrc9776/power-consumption-analyzer.git
 cd power-consumption-analyzer
+python -m venv venv
+# macOS / Linux
+source venv/bin/activate
+# Windows (PowerShell)
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python load_scheduling_optimizer.py \
+  --appliances sample_appliances.csv \
+  --tariffs sample_tariffs.csv \
+  --schedule_out optimized_schedule.csv \
+  --cost_out cost_breakdown.csv \
+  --plot_load load_curve.png \
+  --plot_cost cost_breakdown.png
